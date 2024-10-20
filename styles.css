@@ -1,0 +1,254 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #eaeaea; /* Light background for better contrast */
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: url('images/MrNepal15125.JPEG') no-repeat center top/cover;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif; /* Hero title font */
+    font-size: 4rem;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero-subtitle {
+    font-family: 'Roboto', sans-serif; /* Consistent subtitle font */
+    font-size: 1.5rem;
+    font-weight: 300;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-family: 'Playfair Display', serif; /* Keeping this consistent */
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-family: 'Roboto', sans-serif; /* Consistent paragraph font */
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.portfolio-section h2 {
+    font-family: 'Playfair Display', serif; /* Consistent portfolio heading font */
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 60px 0;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Instagram Reels Section */
+.reels-section {
+    padding: 50px 0;
+    background-color: #fff; /* White background for reels section */
+}
+
+.reels-section h2 {
+    font-family: 'Playfair Display', serif; /* Consistent title font */
+    text-align: center; /* Centering the title */
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.reels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.reel-item iframe {
+    width: 100%;
+    height: 810px;
+    border-radius: 10px;
+}
+
+/* Music Video Section */
+.music-video-section {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.music-video-section h2 {
+    font-family: 'Playfair Display', serif; /* Consistent title font */
+    text-align: center; /* Centering the title */
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-family: 'Playfair Display', serif; /* Consistent title font */
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    background-color: #ff5a5f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #ff2e33;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #111;
+    color: #fff;
+    position: relative; /* Added for positioning social icons */
+}
+
+/* Social Icons */
+.social-icons {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+}
+
+.social-icons .icon {
+    color: #ff5a5f; /* Icon color */
+    font-size: 1.5rem; /* Adjust icon size */
+    margin-left: 15px; /* Space between icons */
+    transition: color 0.3s; /* Transition effect for hover */
+}
+
+.social-icons .icon:hover {
+    color: #ff2e33; /* Color change on hover */
+}
+
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#send-button {
+    transition: background-color 0.3s ease;
+}
