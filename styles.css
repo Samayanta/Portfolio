@@ -63,12 +63,21 @@ body {
     margin-bottom: 20px;
 }
 
-.about-section p {
+.about-details {
     font-family: 'Roboto', sans-serif; /* Consistent paragraph font */
     font-size: 1.2rem;
     color: #333;
     max-width: 800px;
     margin: 0 auto;
+    text-align: left; /* Align text to the left for better readability */
+}
+
+.about-details p {
+    margin: 10px 0; /* Add some spacing between paragraphs */
+}
+
+.about-details strong {
+    color: #007BFF; /* Optional: Color for the labels */
 }
 
 /* Portfolio Section */
