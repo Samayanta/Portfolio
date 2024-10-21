@@ -1390,10 +1390,8 @@
     </div>
   </footer>
 
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-  ></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
     (function () {
       emailjs.init("BQCy1JkeCEL7njzuo"); // Replace with your User ID
@@ -1415,7 +1413,7 @@
         }
 
         // Send the email
-        emailjs.sendForm("service_awreedk", "template_nwtouxv", this).then(
+        emailjs.sendForm("default_service", "template_nwtouxv", this).then(
           function () {
             // Animate button after successful sending
             const button = document.getElementById("send-button");
