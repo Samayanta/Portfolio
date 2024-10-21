@@ -1361,12 +1361,17 @@
       <div class="container">
         <h2>Contact Me</h2>
         <p>If you'd like to work with me, feel free to reach out.</p>
-        <form id="contact-form" action="#" method="POST">
-          <input type="text" name="from_name" placeholder="Your Name" />
-          <input type="email" name="email" placeholder="Your Email" />
+
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
           <input type="hidden" name="to_name" value="Samayanta Raj Ghimire" />
-          <textarea name="message" placeholder="Your Message"></textarea>
-          <button type="submit" id="send-button">Send Message</button>
+          <button type="submit" id="send-button">Send</button>
         </form>
       </div>
     </section>
@@ -1390,47 +1395,50 @@
     </div>
   </footer>
 
-<script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+  ></script>
   <script>
     (function () {
       emailjs.init("BQCy1JkeCEL7njzuo"); // Replace with your User ID
     })();
 
-    document.getElementById("contact-form").addEventListener("submit", function (event) {
-  event.preventDefault();
+    document
+      .getElementById("contact-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
 
-  // Validate form fields
-  const name = this.name.value.trim();
-  const email = this.email.value.trim();
-  const message = this.message.value.trim();
+        // Validate form fields
+        const name = this.name.value.trim();
+        const email = this.email.value.trim();
+        const message = this.message.value.trim();
 
-  console.log(name, email, message); // Log the values to see what's being accessed
+        console.log(name, email, message); // Log the values to see what's being accessed
 
-  if (name === "" || email === "" || message === "") {
-    alert("Please fill in all fields.");
-    return;
-  }
+        if (name === "" || email === "" || message === "") {
+          alert("Please fill in all fields.");
+          return;
+        }
 
-  // Send the email
-  emailjs.sendForm("service_awreedk", "template_nwtouxv", this).then(
-    function () {
-      // Animate button after successful sending
-      const button = document.getElementById("send-button");
-      button.innerHTML = "Sent!";
-      button.style.backgroundColor = "#4CAF50"; // Change color to indicate success
-      button.disabled = true; // Disable the button
+        // Send the email
+        emailjs.sendForm("service_awreedk", "template_nwtouxv", this).then(
+          function () {
+            // Animate button after successful sending
+            const button = document.getElementById("send-button");
+            button.innerHTML = "Sent!";
+            button.style.backgroundColor = "#4CAF50"; // Change color to indicate success
+            button.disabled = true; // Disable the button
 
-      // Reset form fields
-      document.getElementById("contact-form").reset();
-    },
-    function (error) {
-      alert("Failed to send message. Please try again later.");
-      console.error('Error sending email:', error); // Log the error
-    }
-  );
-});
-
+            // Reset form fields
+            document.getElementById("contact-form").reset();
+          },
+          function (error) {
+            alert("Failed to send message. Please try again later.");
+            console.error("Error sending email:", error); // Log the error
+          }
+        );
+      });
   </script>
   <script>
     function openModal(imageSrc) {
