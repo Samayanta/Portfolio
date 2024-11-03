@@ -1,9 +1,12 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@400;600&family=Raleway:wght@300;400&display=swap');
+
 /* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif; /* Base font */
 }
 
 body {
@@ -37,16 +40,16 @@ body {
 }
 
 .hero-title {
-    font-family: 'Playfair Display', serif; /* Hero title font */
+    font-family: 'Dancing Script', cursive; /* Aesthetic handwritten font */
     font-size: 4rem;
     margin-bottom: 10px;
     animation: fadeInDown 1s ease-in-out;
 }
 
 .hero-subtitle {
-    font-family: 'Roboto', sans-serif; /* Consistent subtitle font */
+    font-family: 'Raleway', sans-serif; /* Consistent subtitle font */
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 300;
     animation: fadeInUp 1s ease-in-out;
 }
 
@@ -58,13 +61,13 @@ body {
 }
 
 .about-section h2 {
-    font-family: 'Playfair Display', serif; /* Keeping this consistent */
+    font-family: 'Dancing Script', cursive; /* Consistent section title font */
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
 .about-details {
-    font-family: 'Roboto', sans-serif; /* Consistent paragraph font */
+    font-family: 'Raleway', sans-serif; /* Consistent paragraph font */
     font-size: 1.2rem;
     color: #333;
     max-width: 800px;
@@ -73,6 +76,8 @@ body {
 }
 
 .about-details p {
+    font-family: 'Dancing Script', cursive; /* Consistent section title font */
+    font-weight: lighter;
     margin: 10px 0; /* Add some spacing between paragraphs */
 }
 
@@ -87,7 +92,7 @@ body {
 }
 
 .portfolio-section h2 {
-    font-family: 'Playfair Display', serif; /* Consistent portfolio heading font */
+    font-family: 'Dancing Script', cursive; /* Consistent portfolio heading font */
     text-align: center;
     font-size: 3rem;
     margin-bottom: 30px;
@@ -119,7 +124,7 @@ body {
 }
 
 .reels-section h2 {
-    font-family: 'Playfair Display', serif; /* Consistent title font */
+    font-family: 'Dancing Script', cursive; /* Consistent title font */
     text-align: center; /* Centering the title */
     font-size: 3rem;
     margin-bottom: 20px;
@@ -144,7 +149,7 @@ body {
 }
 
 .music-video-section h2 {
-    font-family: 'Playfair Display', serif; /* Consistent title font */
+    font-family: 'Dancing Script', cursive; /* Consistent title font */
     text-align: center; /* Centering the title */
     font-size: 3rem;
     margin-bottom: 20px;
@@ -176,7 +181,7 @@ body {
 }
 
 .contact-section h2 {
-    font-family: 'Playfair Display', serif; /* Consistent title font */
+    font-family: 'Dancing Script', cursive; /* Consistent title font */
     font-size: 3rem;
     margin-bottom: 20px;
 }
@@ -188,6 +193,7 @@ body {
 
 .contact-section input,
 .contact-section textarea {
+    font-family: 'Poppins', sans-serif; /* Friendly form font */
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -196,6 +202,7 @@ body {
 }
 
 .contact-section button {
+    font-family: 'Poppins', sans-serif; /* Friendly button font */
     padding: 10px 20px;
     background-color: #ff5a5f;
     color: #fff;
@@ -235,7 +242,6 @@ footer {
     color: #ff2e33; /* Color change on hover */
 }
 
-
 /* Animations */
 @keyframes fadeInDown {
     0% {
@@ -258,42 +264,49 @@ footer {
         transform: translateY(0);
     }
 }
+
 #send-button {
     transition: background-color 0.3s ease;
 }
+
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 
 .modal-content {
-  margin: auto;
-  display: block;
-  width: 80%; /* Adjust width */
-  max-width: 700px; /* Max width */
+    margin: auto;
+    display: block;
+    width: 80%; /* Adjust width */
+    max-width: 700px; /* Max width */
 }
 
 .close {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
+.about-details strong {
+    color: #333; /* Set the color to dark gray or black */
+    font-family: 'Poppins', sans-serif; /* Change font style for strong tags */
+}
+
