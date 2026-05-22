@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SRG">
+  <rect width="64" height="64" rx="8" fill="#0B0B0C"/>
+  <path d="M15 42h34" stroke="#C47A5A" stroke-width="2"/>
+  <text x="32" y="34" text-anchor="middle" fill="#F5F3EE" font-family="Georgia, serif" font-size="20" font-weight="600">SRG</text>
+</svg>

@@ -1,0 +1,175 @@
+@media (max-width: 1100px) {
+  .primary-nav {
+    display: none;
+  }
+
+  .site-header {
+    grid-template-columns: 1fr auto;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .hero__grid,
+  .split,
+  .systems-map,
+  .principles,
+  .case-study,
+  .contact-hero,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__visual,
+  .about-portrait,
+  .contact-visual {
+    min-height: min(78vh, 620px);
+  }
+
+  .section__header,
+  .philosophy__grid,
+  .journal-hero-list {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .map-visual {
+    position: relative;
+    top: auto;
+    min-height: 420px;
+  }
+
+  .capability-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-meta {
+    justify-items: start;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --container: min(100% - 28px, 1180px);
+    --wide: min(100% - 28px, 1480px);
+    --section: clamp(72px, 18vw, 110px);
+    --header-height: 68px;
+  }
+
+  .site-header {
+    padding: 11px 14px;
+  }
+
+  .brand {
+    min-width: 128px;
+  }
+
+  .brand__descriptor {
+    display: none;
+  }
+
+  .theme-toggle,
+  .menu-toggle {
+    min-height: 38px;
+  }
+
+  .theme-toggle {
+    width: 38px;
+  }
+
+  .menu-toggle {
+    padding-inline: 14px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--header-height) + 52px);
+  }
+
+  .hero__grid {
+    gap: 34px;
+  }
+
+  .hero__visual,
+  .about-portrait,
+  .contact-visual,
+  .case-study__media {
+    min-height: 380px;
+  }
+
+  .hero__rail,
+  .grid-2,
+  .grid-3,
+  .case-points,
+  .essay-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .numbered-item,
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .capability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .capability {
+    min-height: 220px;
+  }
+
+  .capability h3 {
+    margin-top: 28px;
+  }
+
+  .journal-link {
+    grid-template-columns: 1fr;
+  }
+
+  .journal-link p {
+    max-width: 560px;
+  }
+
+  .map-visual {
+    min-height: 340px;
+  }
+
+  .map-node {
+    width: 84px;
+    height: 84px;
+    font-size: 0.64rem;
+  }
+
+  .contact-method {
+    display: grid;
+  }
+
+  .frame-caption {
+    display: none;
+  }
+}
+
+@media (max-width: 460px) {
+  .display {
+    font-size: clamp(2.6rem, 11.2vw, 3.2rem);
+  }
+
+  .display--medium,
+  .headline {
+    font-size: clamp(2.45rem, 12.2vw, 3.35rem);
+  }
+
+  .button-row {
+    align-items: stretch;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
